@@ -1,6 +1,10 @@
 <?php
 
-
+/**
+ * @param $params
+ * @param $template
+ * @return string
+ */
 function smarty_function_orderTime( $params, &$template )
 {
 
@@ -8,6 +12,7 @@ function smarty_function_orderTime( $params, &$template )
     $deadLine = '12:00';
     $isHoliday = feiertag($date, 'SN');
 
+    // TODO: add multi-lang
     $dayNames = [
         "Sonntag",
         "Montag",
